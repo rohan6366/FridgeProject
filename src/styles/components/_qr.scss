@@ -1,0 +1,13 @@
+.qr_scanner {
+    width: 8rem;
+    height: 8rem;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 100;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}

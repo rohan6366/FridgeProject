@@ -32,6 +32,14 @@ $font-weight-heavy-1: 500;
 
 @import "media";
 
+@import "./components/slide";
+@import "./components/slides";
+@import "./components/qr";
+@import "./components/welcome";
+@import "./components/button";
+
+
+
 
 
 *,
@@ -64,6 +72,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   color: $color-grey-dark-3;
+  overflow: hidden;
 }
 
 
