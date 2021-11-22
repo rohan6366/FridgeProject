@@ -1,0 +1,79 @@
+$color-primary: #EA3A60;
+$color-primary-dark: #f71647;
+
+$color-green : #55c57a;
+$color-green-light : #7ed56f;
+$color-green-dark : #28b485;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-light-grey-1 : #f7f7f7;
+
+$color-grey-dark : #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+$color-white: #fff;
+$color-black: #000;
+
+$logo-color: #02073E;
+$max-width: 130rem;
+
+$font-weight-heavy-3: 700;
+$font-weight-heavy-2: 600;
+$font-weight-heavy-1: 500;
+
+$font-weight-light-3: 500;
+$font-weight-heavy-1: 500;
+$font-weight-heavy-1: 500;
+
+@import "media";
+
+
+
+*,
+*::before,
+*::after {
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 60%
+  }
+
+  @include respond(tab-port) {
+    font-size: 55%
+  }
+
+  @include respond(phone) {
+    font-size: 50%
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: $color-grey-dark-3;
+}
+
+
+
+
+/*
+0 - 600px:        Phone
+600 - 900px:      Tablet Portrait
+900 - 1200px:     Tablet Landscape
+1200 - 1800px:    Desktop (Our initial styles)
+1800 - 1800px+:   Big Desktop
+*/
+
