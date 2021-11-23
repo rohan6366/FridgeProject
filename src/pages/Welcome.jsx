@@ -1,9 +1,17 @@
-
+import { useState, useEffect } from 'react';
+import { io } from 'socket.io-client';
 import { Link } from 'react-router-dom';
 
 export default function Welcome() {
 
+  const [socket, setSocket] = useState(null)
 
+  useEffect(() => {
+    
+    setSocket(io("http://localhost:8000/"))
+  },[])
+
+  console.log(socket)
   return (
 
     <header className='header'>
